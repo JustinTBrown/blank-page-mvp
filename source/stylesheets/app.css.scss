@@ -1,4 +1,7 @@
 @import "settings";
+@import "colors";
+@import "icons";
+@import "typography";
 @import "foundation.scss";
 
 header {
@@ -9,6 +12,14 @@ header {
 
 }
 
+p:first-child {
+  margin-top: 0;
+}
+
+section {
+  padding: 1em 1em;
+}
+
 section.header {
   background-image: url(/assets/images/daniel-office-1.jpg);
   background-size: cover;
@@ -17,19 +28,28 @@ section.header {
   height: 300px;
   width: 100%;
 
-  .text-overlay {
-    @include grid-column(12);
-    
-    h1 {
+  .row {
+    .text-overlay {
+      // @include grid-column(12);
+      height: 300px;
+      position: relative;
+      
+      h1 {
+        bottom: 0;
+        position: absolute;
+      }
     }
   }
 }
 
 section.about {
+  // background-color: $salmon;
+  background-color: $dk-grey;
   .text-block {
-    @include grid-column(12);
-    
+    // @include grid-column(12);
+
     p {
+      color: $white;
     }
   }
 }
@@ -43,13 +63,24 @@ section.location {
   width: 100%;
 
   .text-overlay {
-    @include grid-column(12);
+    // @include grid-column(12);
 
     h2 {
     }
 
     p {
     }
+  }
+}
+
+footer {
+  padding: 1em 1em;
+
+  .footer-logo {
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
   }
 }
 

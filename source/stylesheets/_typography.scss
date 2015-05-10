@@ -1,0 +1,48 @@
+// @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+
+$font-family-sans-stack: "Source Sans Pro", "Helvetica", Helvetica, Arial, sans-serif;
+
+h1, h2, h3, h4, h5, h6, p, a, address {
+  color: $xd-grey;
+  font-family: $font-family-sans-stack;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: $dk-grey;
+  }
+}
+
+.caret {
+  // display: inline-block;
+  // &:after{
+  //   @extend .fi-chevron-right;
+  //   // font-family: "icomoon";
+  //   // content: '\e630';
+  //   // vertical-align: middle;
+  // }
+  // @media #{$small-only} {
+  //   display: block;
+  //   width: 100%;
+  // }
+  &:after {
+    content: "\e600";
+    // content: "&#xe600";
+    // @extend .icon-chevron-right;
+  }
+  // &:before {
+  //   @extend .icon-chevron-right;
+  // }
+}
+
