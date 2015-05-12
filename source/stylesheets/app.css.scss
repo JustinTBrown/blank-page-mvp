@@ -5,11 +5,11 @@
 @import "foundation.scss";
 
 header {
-  @include grid-row;
+  padding: 2em 3em;
 
-  .logo  { @include grid-column($columns:3, $center:true); }
-  padding-bottom: em-calc(10px);
-
+  .logo {
+    height: 5em;
+  }
 }
 
 p:first-child {
