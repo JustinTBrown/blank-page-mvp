@@ -38,75 +38,48 @@ p:first-child {
 }
 
 section {
-  padding: 2em 0;
-  margin-bottom: 2em;
-  margin-top: 2em;
-}
+  // padding: 2em 0;
+  margin-bottom: 4em;
+  margin-top: 4em;
 
-section.header {
-  background-image: url(/assets/images/daniel-office-1.jpg);
-  background-size: cover;
-  background-position: center center;
-  display: block;
-  height: 300px;
-  width: 100%;
-
-  @media #{$medium-up} {
-    height: 500px;
+  &:last-of-type {
+    margin-bottom: 0;
   }
 
-  @media #{$large-up} {
-    height: 600px;
-  }
-
-  .row {
-    .text-overlay {
-      height: 300px;
-      position: relative;
-
-      @media #{$medium-up} {
-        height: 500px;
-      }
-
-      @media #{$large-up} {
-        height: 600px;
-      }
-      
-      h2 {
-        bottom: 1em;
-        position: absolute;
-      }
-    }
+  h2 {
+    margin-top: 0;
   }
 }
 
 section.welcome {
-
   .text-box {
     display: inline-block;
     position: relative;
 
-    .columns & {
+    @media #{$small-only} {
+      width: 100%;
       text-align: center;
-
+      padding-bottom: 6em;
     }
 
     h2 {
+      display: inline-block;
       text-align: left;
-
     }
   }
 }
 
 section.about {
+  // display: none;
+  // position: relative;
+  // visibility: hidden;
 
   .text-block {
-    padding-bottom: 3em;
-    padding-top: 3em;
+    // padding-bottom: 3em;
+    // padding-top: 3em;
 
-    p {
-      color: $white;
-      text-align: center;
+    @media #{$small-only} {
+      padding-bottom: 2em;
     }
   }
 }
@@ -116,6 +89,7 @@ section.location {
   background-size: cover;
   background-position: center center;
   display: block;
+  padding: 2em 0;
   width: 100%;
 
   .text-overlay {
