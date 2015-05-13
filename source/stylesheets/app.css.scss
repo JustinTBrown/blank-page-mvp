@@ -27,8 +27,8 @@ section {
   padding: 2em 0;
 }
 
-section.header {
-  background-image: url(/assets/images/daniel-office-1.jpg);
+section.header,
+section.about {
   background-size: cover;
   background-position: center center;
   display: block;
@@ -42,6 +42,10 @@ section.header {
   @media #{$large-up} {
     height: 600px;
   }
+}
+
+section.header {
+  background-image: url(/assets/images/daniel-office-1.jpg);
 
   .row {
     .text-overlay {
@@ -65,8 +69,8 @@ section.header {
 }
 
 section.about {
-  background-color: $dk-grey;
-  background-color: $md-grey;
+  // background-color: $md-grey;
+  background-image: url("/assets/images/modular-office.jpg");
 
   .text-block {
     padding-bottom: 3em;

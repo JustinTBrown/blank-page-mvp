@@ -10,7 +10,7 @@ compass_config do |config|
   config.http_path = "/"
   config.css_dir = "stylesheets"
   config.sass_dir = "stylesheets"
-  config.images_dir = "images"
+  config.images_dir = "assets/images"
   config.javascripts_dir = "javascripts"
 
   # You can select your preferred output style here (can be overridden via the command line):
@@ -84,7 +84,7 @@ set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
-set :images_dir, 'images'
+set :images_dir, 'assets/images'
 
 # Build-specific configuration
 configure :build do
@@ -102,6 +102,9 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  # Ignore on build
+  ignore 'bower_components/*'
 end
 
 activate :s3_sync do |s3_sync|
