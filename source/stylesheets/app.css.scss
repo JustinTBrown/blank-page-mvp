@@ -9,7 +9,7 @@ header {
   background-color: rgba(255,255,255,0.9);
   display: none;
   // padding: 0.3em 0;
-  padding: 0.3em 0.4em;
+  padding: 0.3em 0.6em;
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -29,12 +29,18 @@ header {
   height: 2em;
 }
 
+// h2.center {
+//   text-align: center;
+// }
+
 p:first-child {
   margin-top: 0;
 }
 
 section {
   padding: 2em 0;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 section.header {
@@ -70,6 +76,24 @@ section.header {
         bottom: 1em;
         position: absolute;
       }
+    }
+  }
+}
+
+section.welcome {
+
+  .text-box {
+    display: inline-block;
+    position: relative;
+
+    .columns & {
+      text-align: center;
+
+    }
+
+    h2 {
+      text-align: left;
+
     }
   }
 }
