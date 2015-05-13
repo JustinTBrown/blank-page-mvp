@@ -35,10 +35,26 @@ section.header {
   height: 300px;
   width: 100%;
 
+  @media #{$medium-up} {
+    height: 500px;
+  }
+
+  @media #{$large-up} {
+    height: 600px;
+  }
+
   .row {
     .text-overlay {
       height: 300px;
       position: relative;
+
+      @media #{$medium-up} {
+        height: 500px;
+      }
+
+      @media #{$large-up} {
+        height: 600px;
+      }
       
       h2 {
         bottom: 1em;
@@ -85,7 +101,7 @@ section.location {
 
 footer {
   background-color: $dk-grey;
-  padding: 1em 1em;
+  padding: 2em 1em;
 
   .footer-logo {
     display: block;
